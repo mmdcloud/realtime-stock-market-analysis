@@ -1,3 +1,3 @@
 output "kafka_instnace_ip" {
-  value = kafka_instnace.public_ip
+  value = aws_instance.kafka_instance.public_ip
 }

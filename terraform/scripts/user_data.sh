@@ -4,4 +4,3 @@ tar -xvf kafka_2.12-3.8.0.tgz
 java -version
 sudo yum install java-1.8.0-openjdk
 java -version
-cd kafka_2.12-3.8.0
