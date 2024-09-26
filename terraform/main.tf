@@ -70,8 +70,8 @@ resource "aws_instance" "kafka_instance" {
 
 # S3 bucket for storing files
 resource "aws_s3_bucket" "stock-market-bucket" {
-  force_delete = true
-  bucket = "theplayer007-stock-market-bucket"
+  force_destroy = true
+  bucket       = "theplayer007-stock-market-bucket"
 }
 
 # Glue Catalog Database
@@ -92,8 +92,8 @@ resource "aws_glue_crawler" "stock-market-crawler" {
 
 # Athena Database
 resource "aws_s3_bucket" "athena-bucket" {
-  force_delete = true
-  bucket = "theplayer007-stock-market-athena-bucket"
+  force_destroy = true
+  bucket       = "theplayer007-stock-market-athena-bucket"
 }
 
 resource "aws_athena_database" "athena-database" {
